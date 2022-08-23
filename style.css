@@ -1,0 +1,140 @@
+body{
+    
+    margin: 0px auto;
+}
+    
+.playing_field{
+  
+   background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 100%;
+    max-width: 100%;
+    background-image: url("pic/home.png");
+   
+}
+.ancient {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-width: 40%;
+    padding: 20px; 
+}
+.ancient_card {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 300px;
+    width: 220px;
+    
+}
+.azat {
+    background-image: url("pic/Azathoth.e76cc60e6f2b9bb167ce.png");
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.iog {
+    background-image: url("pic/IogSothoth.c5b7717bff973cda27be.png");
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+    margin-top: 20px;
+}
+.cthulthu {
+    background-image: url("pic/Cthulthu.e7bfd029744dc9f87c1a.png");
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.shub {
+    background-image: url("pic/ShubNiggurath.68c4272e00c9596e65b1.png");
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+    margin-top: 20px;
+}
+.distribution_block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    min-width: 30%;
+
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+  
+}
+
+.dif {
+    border: 2px solid rgb(212, 209, 11);
+    box-sizing: border-box;
+    color: rgb(134, 203, 235);
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.stages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 30%;
+}
+.stages_1, .stages_2, .stages_3  {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+p {
+    margin: auto;
+    padding: 3px;
+    color: rgb(134, 203, 235);
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+padding: 5px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 20px Arial, sans-serif;
+}
+.deck {
+    background-size: cover;
+    height: 210px;
+    width: 145px;
+    background-image: url("pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png");
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.last_card {
+    background-size: cover;
+    height: 210px;
+    width: 145px;
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+}
+.shuffle {
+    
+    border: 2px solid rgb(134, 203, 235);
+    color: rgb(134, 203, 235);
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgb(226, 224, 224);
+
+}
