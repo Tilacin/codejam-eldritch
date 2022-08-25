@@ -89,6 +89,9 @@ body{
 }
 
 .dif {
+    
+    max-height: 37px;
+    height: 100%;
     border: 2px solid rgb(212, 209, 11);
     box-sizing: border-box;
     color: rgb(134, 203, 235);
