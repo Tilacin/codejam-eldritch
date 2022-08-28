@@ -1,44 +1,44 @@
 //увеличивание картинки по клику
 //заполнение цифрами кружков
 //
-let number_green1 = document.querySelector(".stages_11")
-let number_blue1 = document.querySelector(".stages_13")
-let number_brown1 = document.querySelector(".stages_12")
-let number_green2 = document.querySelector(".stages_21")
-let number_blue2 = document.querySelector(".stages_23")
-let number_brown2 = document.querySelector(".stages_22")
-let number_green3 = document.querySelector(".stages_31")
-let number_blue3 = document.querySelector(".stages_33")
-let number_brown3 = document.querySelector(".stages_32")
+let number_green1 = document.querySelector(".stages_11");
+let number_blue1 = document.querySelector(".stages_13");
+let number_brown1 = document.querySelector(".stages_12");
+let number_green2 = document.querySelector(".stages_21");
+let number_blue2 = document.querySelector(".stages_23");
+let number_brown2 = document.querySelector(".stages_22");
+let number_green3 = document.querySelector(".stages_31");
+let number_blue3 = document.querySelector(".stages_33");
+let number_brown3 = document.querySelector(".stages_32");
 
 let image1 = document.querySelector(".azat");
 let even1 = true;
 image1.onclick = function () {
   if (even1) {
-    this.style.zoom = "2.5";//увеличиваем картинку
-    this.style.position = "absolute"//перекрываем остальные
-    number_green1.textContent = "1"//заполняем кружки
-    number_green2.textContent = "2"
-    number_green3.textContent = "2"
-    number_blue1.textContent = "1"
-    number_blue2.textContent = "1"
-    number_blue3.textContent = "0"
-    number_brown1.textContent = "2"
-    number_brown2.textContent = "3"
-    number_brown3.textContent = "4"
+    this.style.zoom = "2.5"; //увеличиваем картинку
+    this.style.position = "absolute"; //перекрываем остальные
+    number_green1.textContent = "1"; //заполняем кружки
+    number_green2.textContent = "2";
+    number_green3.textContent = "2";
+    number_blue1.textContent = "1";
+    number_blue2.textContent = "1";
+    number_blue3.textContent = "0";
+    number_brown1.textContent = "2";
+    number_brown2.textContent = "3";
+    number_brown3.textContent = "4";
     even1 = false;
   } else {
     this.style.zoom = "1";
-    this.style.position = "static"
-    number_green1.textContent = ""
-    number_green2.textContent = ""
-    number_green3.textContent = ""
-    number_blue1.textContent = ""
-    number_blue2.textContent = ""
-    number_blue3.textContent = ""
-    number_brown1.textContent = ""
-    number_brown2.textContent = ""
-    number_brown3.textContent = ""
+    this.style.position = "static";
+    number_green1.textContent = "";
+    number_green2.textContent = "";
+    number_green3.textContent = "";
+    number_blue1.textContent = "";
+    number_blue2.textContent = "";
+    number_blue3.textContent = "";
+    number_brown1.textContent = "";
+    number_brown2.textContent = "";
+    number_brown3.textContent = "";
     even1 = true;
   }
 };
@@ -47,29 +47,29 @@ let even2 = true;
 image2.onclick = function () {
   if (even2) {
     this.style.zoom = "2.5";
-    this.style.position = "absolute"
-    number_green1.textContent = "0"
-    number_green2.textContent = "2"
-    number_green3.textContent = "3"
-    number_blue1.textContent = "1"
-    number_blue2.textContent = "1"
-    number_blue3.textContent = "0"
-    number_brown1.textContent = "2"
-    number_brown2.textContent = "3"
-    number_brown3.textContent = "4"
+    this.style.position = "absolute";
+    number_green1.textContent = "0";
+    number_green2.textContent = "2";
+    number_green3.textContent = "3";
+    number_blue1.textContent = "1";
+    number_blue2.textContent = "1";
+    number_blue3.textContent = "0";
+    number_brown1.textContent = "2";
+    number_brown2.textContent = "3";
+    number_brown3.textContent = "4";
     even2 = false;
   } else {
     this.style.zoom = "1";
-    this.style.position = "static"
-    number_green1.textContent = ""
-    number_green2.textContent = ""
-    number_green3.textContent = ""
-    number_blue1.textContent = ""
-    number_blue2.textContent = ""
-    number_blue3.textContent = ""
-    number_brown1.textContent = ""
-    number_brown2.textContent = ""
-    number_brown3.textContent = ""
+    this.style.position = "static";
+    number_green1.textContent = "";
+    number_green2.textContent = "";
+    number_green3.textContent = "";
+    number_blue1.textContent = "";
+    number_blue2.textContent = "";
+    number_blue3.textContent = "";
+    number_brown1.textContent = "";
+    number_brown2.textContent = "";
+    number_brown3.textContent = "";
     even2 = true;
   }
 };
@@ -79,29 +79,29 @@ let even3 = true;
 image3.onclick = function () {
   if (even3) {
     this.style.zoom = "2.5";
-    this.style.position = "absolute"
-    number_green1.textContent = "0"
-    number_green2.textContent = "1"
-    number_green3.textContent = "3"
-    number_blue1.textContent = "2"
-    number_blue2.textContent = "0"
-    number_blue3.textContent = "0"
-    number_brown1.textContent = "2"
-    number_brown2.textContent = "3"
-    number_brown3.textContent = "4"
+    this.style.position = "absolute";
+    number_green1.textContent = "0";
+    number_green2.textContent = "1";
+    number_green3.textContent = "3";
+    number_blue1.textContent = "2";
+    number_blue2.textContent = "0";
+    number_blue3.textContent = "0";
+    number_brown1.textContent = "2";
+    number_brown2.textContent = "3";
+    number_brown3.textContent = "4";
     even3 = false;
   } else {
     this.style.zoom = "1";
-    this.style.position = "static"
-    number_green1.textContent = ""
-    number_green2.textContent = ""
-    number_green3.textContent = ""
-    number_blue1.textContent = ""
-    number_blue2.textContent = ""
-    number_blue3.textContent = ""
-    number_brown1.textContent = ""
-    number_brown2.textContent = ""
-    number_brown3.textContent = ""
+    this.style.position = "static";
+    number_green1.textContent = "";
+    number_green2.textContent = "";
+    number_green3.textContent = "";
+    number_blue1.textContent = "";
+    number_blue2.textContent = "";
+    number_blue3.textContent = "";
+    number_brown1.textContent = "";
+    number_brown2.textContent = "";
+    number_brown3.textContent = "";
     even3 = true;
   }
 };
@@ -110,29 +110,29 @@ let even4 = true;
 image4.onclick = function () {
   if (even4) {
     this.style.zoom = "2.5";
-    this.style.position = "absolute"
-    number_green1.textContent = "1"
-    number_green2.textContent = "3"
-    number_green3.textContent = "2"
-    number_blue1.textContent = "1"
-    number_blue2.textContent = "1"
-    number_blue3.textContent = "0"
-    number_brown1.textContent = "2"
-    number_brown2.textContent = "2"
-    number_brown3.textContent = "4"
+    this.style.position = "absolute";
+    number_green1.textContent = "1";
+    number_green2.textContent = "3";
+    number_green3.textContent = "2";
+    number_blue1.textContent = "1";
+    number_blue2.textContent = "1";
+    number_blue3.textContent = "0";
+    number_brown1.textContent = "2";
+    number_brown2.textContent = "2";
+    number_brown3.textContent = "4";
     even4 = false;
   } else {
     this.style.zoom = "1";
-    this.style.position = "static"
-    number_green1.textContent = ""
-    number_green2.textContent = ""
-    number_green3.textContent = ""
-    number_blue1.textContent = ""
-    number_blue2.textContent = ""
-    number_blue3.textContent = ""
-    number_brown1.textContent = ""
-    number_brown2.textContent = ""
-    number_brown3.textContent = ""
+    this.style.position = "static";
+    number_green1.textContent = "";
+    number_green2.textContent = "";
+    number_green3.textContent = "";
+    number_blue1.textContent = "";
+    number_blue2.textContent = "";
+    number_blue3.textContent = "";
+    number_brown1.textContent = "";
+    number_brown2.textContent = "";
+    number_brown3.textContent = "";
     even4 = true;
   }
 };
@@ -158,8 +158,8 @@ let arr_brown = [
   ["./MythicCards/brown/brown18.png"],
   ["./MythicCards/brown/brown19.png"],
   ["./MythicCards/brown/brown20.png"],
-  ["./MythicCards/brown/brown21.png"]
-]
+  ["./MythicCards/brown/brown21.png"],
+];
 let arr_blue = [
   ["./MythicCards/blue/blue1.png"],
   ["./MythicCards/blue/blue2.png"],
@@ -173,8 +173,7 @@ let arr_blue = [
   ["./MythicCards/blue/blue10.png"],
   ["./MythicCards/blue/blue11.png"],
   ["./MythicCards/blue/blue12.png"],
-  
-]
+];
 let arr_green = [
   ["./MythicCards/green/green1.png"],
   ["./MythicCards/green/green2.png"],
@@ -194,48 +193,53 @@ let arr_green = [
   ["./MythicCards/green/green16.png"],
   ["./MythicCards/green/green17.png"],
   ["./MythicCards/green/green18.png"],
-]
+];
 //перемешиваем карты
-let shuffle_random = document.querySelector(".shuffle")
+let shuffle_random = document.querySelector(".shuffle");
 function shuffle(n) {
   n.sort(() => Math.random() - 0.5);
 }
-shuffle(arr_green)
-shuffle(arr_blue)
-shuffle(arr_brown)
-shuffle_random.onclick = function(){
+shuffle(arr_green);
+shuffle(arr_blue);
+shuffle(arr_brown);
+shuffle_random.onclick = function () {
   last.style.opacity = "1";
   deck.style.opacity = "1";
-
-}
+};
 //набираем стейджи
 //АЗАТОТ
-let arr_stage1 = arr_blue.slice(0,1).concat(arr_brown.slice(0,2), arr_green.slice(0,1))
+let arr_stage1 = arr_blue
+  .slice(0, 1)
+  .concat(arr_brown.slice(0, 2), arr_green.slice(0, 1));
 
-let arr_stage2 = arr_blue.slice(1,2).concat(arr_brown.slice(2,5), arr_green.slice(1,3))
+let arr_stage2 = arr_blue
+  .slice(1, 2)
+  .concat(arr_brown.slice(2, 5), arr_green.slice(1, 3));
 
-let arr_stage3 = arr_brown.slice(5,9).concat(arr_green.slice(3,5))
-
-
+let arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(3, 5));
 
 //выводим карты на экран
-let deck = document.querySelector(".deck")
-let last = document.querySelector(".last_card")
-deck.onclick = function(){
-  let next
-  if(arr_stage1.length>0){
-  next = arr_stage1.pop()
-  if (arr_stage1.indexOf("brown") != -1) {
-    number_brown1.textContent -1
-  }
-  }else if(arr_stage2.length>0)
-next = arr_stage2.pop()
-else if(arr_stage3.length>0)
-next = arr_stage3.pop()
-else 
-  next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png"
-console.log(next)
-last.style.background = `url(${next})`
+let deck = document.querySelector(".deck");
+let last = document.querySelector(".last_card");
 
-}
-console.log("Каждую новую игру колода перемешивается\nУровень только один -'средний'")
+deck.onclick = function () {
+  let next;
+
+  if (arr_stage1.length > 0) {
+    next = arr_stage1.pop();
+   
+  } else if (arr_stage2.length > 0) {
+    next = arr_stage2.pop();
+   
+  } else if (arr_stage3.length > 0) {
+    next = arr_stage3.pop();
+    
+  } else next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png";
+  
+  last.style.background = `url(${next})`;
+  console.log(next)
+};
+console.log(
+  "Каждую новую игру колода перемешивается\nУровень только один -'средний'\nДревний один - 'Азатот'"
+);
+
