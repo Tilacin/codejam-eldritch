@@ -151,12 +151,18 @@ padding: 5px;
     box-shadow: 0 5px 15px rgb(226, 224, 224);
     border: 2px solid rgb(212, 209, 11);
     cursor: pointer;
+    opacity: 0;
 }
 .last_card {
+   
     background-size: cover;
-    height: 210px;
-    width: 145px;
+height: 315px;
+    width: 258px;
+    
     box-shadow: 0 5px 15px rgb(226, 224, 224);
+
+    cursor: pointer;
+    opacity: 0;
 }
 .shuffle {
     
