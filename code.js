@@ -210,9 +210,9 @@ shuffle_random.onclick = function(){
 }
 //набираем стейджи
 //АЗАТОТ
-let arr_stage1 = arr_blue.slice(0).concat(arr_brown.slice(0,2), arr_green.slice(0))
+let arr_stage1 = arr_blue.slice(0,1).concat(arr_brown.slice(0,2), arr_green.slice(0,1))
 
-let arr_stage2 = arr_blue.slice(1).concat(arr_brown.slice(2,5), arr_green.slice(1,3))
+let arr_stage2 = arr_blue.slice(1,2).concat(arr_brown.slice(2,5), arr_green.slice(1,3))
 
 let arr_stage3 = arr_brown.slice(5,9).concat(arr_green.slice(3,5))
 
@@ -232,8 +232,10 @@ deck.onclick = function(){
 next = arr_stage2.pop()
 else if(arr_stage3.length>0)
 next = arr_stage3.pop()
-else next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png"
+else 
+  next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png"
 console.log(next)
 last.style.background = `url(${next})`
+
 }
-console.log("Каждую новую игру колода перемешивается")
+console.log("Каждую новую игру колода перемешивается\nУровень только один -'средний'")
