@@ -49,21 +49,21 @@ body{
 }
 .iog {
     
-    /*background-image: url("pic/IogSothoth.c5b7717bff973cda27be.png");*/
+    background-image: url("pic/IogSothoth.c5b7717bff973cda27be.png");
     box-shadow: 0 5px 15px rgb(226, 224, 224);
     margin-top: 20px;
     border: 2px solid rgb(212, 209, 11)
 }
 .cthulthu {
     
-    /*background-image: url("pic/Cthulthu.e7bfd029744dc9f87c1a.png");*/
+    background-image: url("pic/Cthulthu.e7bfd029744dc9f87c1a.png");
     box-shadow: 0 5px 15px rgb(226, 224, 224);
     border: 2px solid rgb(212, 209, 11);
     
 }
 .shub {
     
-   /* background-image: url("pic/ShubNiggurath.68c4272e00c9596e65b1.png");*/
+   background-image: url("pic/ShubNiggurath.68c4272e00c9596e65b1.png");
     box-shadow: 0 5px 15px rgb(226, 224, 224);
     border: 2px solid rgb(212, 209, 11);
     margin-top: 20px;

@@ -208,6 +208,7 @@ shuffle_random.onclick = function () {
 };
 //набираем стейджи
 //АЗАТОТ
+
 let arr_stage1 = arr_blue
   .slice(0, 1)
   .concat(arr_brown.slice(0, 2), arr_green.slice(0, 1));
@@ -227,17 +228,39 @@ deck.onclick = function () {
 
   if (arr_stage1.length > 0) {
     next = arr_stage1.pop();
-   
+      if(number_green1.textContent != 0){
+        number_green1.textContent--
+      }else if(number_brown1.textContent != 0){
+        number_brown1.textContent--
+      }else if(number_blue1.textContent != 0){
+        number_blue1.textContent--
+      }
   } else if (arr_stage2.length > 0) {
     next = arr_stage2.pop();
+      if(number_green2.textContent != 0){
+        number_green2.textContent--
+      }else if(number_brown2.textContent != 0){
+        number_brown2.textContent--
+      }else if(number_blue2.textContent != 0){
+        number_blue2.textContent--
+      }
    
   } else if (arr_stage3.length > 0) {
     next = arr_stage3.pop();
+        if(number_green3.textContent != 0){
+          number_green3.textContent--
+        }else if(number_brown3.textContent != 0){
+          number_brown3.textContent--
+        }else if(number_blue3.textContent != 0){
+          number_blue3.textContent--
+        }
     
   } else next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png";
   
   last.style.background = `url(${next})`;
+ 
   console.log(next)
+
 };
 console.log(
   "Каждую новую игру колода перемешивается\nУровень только один -'средний'\nДревний один - 'Азатот'"
