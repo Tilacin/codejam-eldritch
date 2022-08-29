@@ -10,6 +10,9 @@ let number_brown2 = document.querySelector(".stages_22");
 let number_green3 = document.querySelector(".stages_31");
 let number_blue3 = document.querySelector(".stages_33");
 let number_brown3 = document.querySelector(".stages_32");
+let arr_stage1;
+let arr_stage2;
+let arr_stage3;
 
 let image1 = document.querySelector(".azat");
 let even1 = true;
@@ -27,6 +30,15 @@ image1.onclick = function () {
     number_brown2.textContent = "3";
     number_brown3.textContent = "4";
     even1 = false;
+
+    arr_stage1 = arr_blue //набираем стейджи
+      .slice(0, 1)
+      .concat(arr_brown.slice(0, 2), arr_green.slice(0, 1));
+
+    arr_stage2 = arr_blue
+      .slice(1, 2)
+      .concat(arr_brown.slice(2, 5), arr_green.slice(1, 3));
+    arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(3, 5));
   } else {
     this.style.zoom = "1";
     this.style.position = "static";
@@ -58,6 +70,14 @@ image2.onclick = function () {
     number_brown2.textContent = "3";
     number_brown3.textContent = "4";
     even2 = false;
+
+    arr_stage1 = arr_blue.slice(0, 1).concat(arr_brown.slice(0, 2));
+
+    arr_stage2 = arr_blue
+      .slice(1, 2)
+      .concat(arr_brown.slice(2, 5), arr_green.slice(1, 3));
+
+    arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(3, 6));
   } else {
     this.style.zoom = "1";
     this.style.position = "static";
@@ -90,6 +110,11 @@ image3.onclick = function () {
     number_brown2.textContent = "3";
     number_brown3.textContent = "4";
     even3 = false;
+    arr_stage1 = arr_blue.slice(0, 2).concat(arr_brown.slice(0, 2));
+
+    arr_stage2 = arr_green.slice(1, 2).concat(arr_brown.slice(2, 5));
+
+    arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(3, 6));
   } else {
     this.style.zoom = "1";
     this.style.position = "static";
@@ -121,6 +146,16 @@ image4.onclick = function () {
     number_brown2.textContent = "2";
     number_brown3.textContent = "4";
     even4 = false;
+
+    arr_stage1 = arr_blue
+      .slice(0, 1)
+      .concat(arr_brown.slice(0, 2), arr_green.slice(0, 1));
+
+    arr_stage2 = arr_blue
+      .slice(1, 2)
+      .concat(arr_brown.slice(2, 4), arr_green.slice(1, 4));
+
+    arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(4, 6));
   } else {
     this.style.zoom = "1";
     this.style.position = "static";
@@ -206,18 +241,6 @@ shuffle_random.onclick = function () {
   last.style.opacity = "1";
   deck.style.opacity = "1";
 };
-//набираем стейджи
-//АЗАТОТ
-
-let arr_stage1 = arr_blue
-  .slice(0, 1)
-  .concat(arr_brown.slice(0, 2), arr_green.slice(0, 1));
-
-let arr_stage2 = arr_blue
-  .slice(1, 2)
-  .concat(arr_brown.slice(2, 5), arr_green.slice(1, 3));
-
-let arr_stage3 = arr_brown.slice(5, 9).concat(arr_green.slice(3, 5));
 
 //выводим карты на экран
 let deck = document.querySelector(".deck");
@@ -228,41 +251,38 @@ deck.onclick = function () {
 
   if (arr_stage1.length > 0) {
     next = arr_stage1.pop();
-      if(number_green1.textContent != 0){
-        number_green1.textContent--
-      }else if(number_brown1.textContent != 0){
-        number_brown1.textContent--
-      }else if(number_blue1.textContent != 0){
-        number_blue1.textContent--
-      }
+    if (number_green1.textContent != 0) {
+      number_green1.textContent--;
+    } else if (number_brown1.textContent != 0) {
+      number_brown1.textContent--;
+    } else if (number_blue1.textContent != 0) {
+      number_blue1.textContent--;
+    }
   } else if (arr_stage2.length > 0) {
     next = arr_stage2.pop();
-      if(number_green2.textContent != 0){
-        number_green2.textContent--
-      }else if(number_brown2.textContent != 0){
-        number_brown2.textContent--
-      }else if(number_blue2.textContent != 0){
-        number_blue2.textContent--
-      }
-   
+    if (number_green2.textContent != 0) {
+      number_green2.textContent--;
+    } else if (number_brown2.textContent != 0) {
+      number_brown2.textContent--;
+    } else if (number_blue2.textContent != 0) {
+      number_blue2.textContent--;
+    }
   } else if (arr_stage3.length > 0) {
     next = arr_stage3.pop();
-        if(number_green3.textContent != 0){
-          number_green3.textContent--
-        }else if(number_brown3.textContent != 0){
-          number_brown3.textContent--
-        }else if(number_blue3.textContent != 0){
-          number_blue3.textContent--
-        }
-    
-  } else next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png";
-  
+    if (number_green3.textContent != 0) {
+      number_green3.textContent--;
+    } else if (number_brown3.textContent != 0) {
+      number_brown3.textContent--;
+    } else if (number_blue3.textContent != 0) {
+      number_blue3.textContent--;
+    }
+  } else
+    (next = "pic/mythicCardBackground.6cfef7456fa52cb3c0c7.png"),
+      console.log("КАРТЫ ЗАКОНЧИЛИСЬ, хватит тыкать!!!");
   last.style.background = `url(${next})`;
- 
-  console.log(next)
 
+  console.log(next);
 };
 console.log(
-  "Каждую новую игру колода перемешивается\nУровень только один -'средний'\nДревний один - 'Азатот'"
+  "Каждую новую игру колода перемешивается\nУровень только один -'средний'"
 );
-
